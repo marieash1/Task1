@@ -1,10 +1,7 @@
-function City(cname, country) {
-    if (country == null) {
-        console.log("".concat(cname, " is in Pakistan"));
-    }
-    else {
-        console.log("".concat(cname, " is in ").concat(country));
-    }
+function describe_city(city, country) {
+    if (country === void 0) { country = "unknown"; }
+    console.log("".concat(city, " is in ").concat(country, "."));
 }
-City("London", "UK");
-City("Karachi");
+describe_city("Karachi", "Pakistan");
+describe_city("New York"); // Using the default country
+describe_city("Paris", "France");
