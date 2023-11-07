@@ -1,10 +1,6 @@
-function City(cname:string, country?:string):void{
-if(country==null){
-    console.log(`${cname} is in Pakistan`);
+function describe_city(city: string, country: string = "unknown") {
+    console.log(`${city} is in ${country}.`);
 }
-else{
-    console.log(`${cname} is in ${country}`);
-}
-}
-City("London", "UK");
-City("Karachi");
+describe_city("Karachi", "Pakistan");
+describe_city("New York"); // Using the default country
+describe_city("Paris", "France");
