@@ -1,12 +1,8 @@
-function Shirt1(size?:string): void{
-    if(size=="small"){
-    console.log(`Size: ${size} and message "I love Pakistan`);
-   }
-   else if(size=="medium"){
-    console.log(`Size: ${size} and message "I love Typescript`);
-   }
-   else{}
-   console.log(`Size: large and message "I love Typescript`);
+function make_shirt(size: string = "large", message: string = "I love TypeScript") {
+    console.log(`Shirt Size: ${size}, Message: ${message}`);
 }
-Shirt1("none");
-Shirt1(" ");
+
+//default message
+make_shirt();
+make_shirt("medium");
+make_shirt("small", "Hello World");
