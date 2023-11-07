@@ -1,6 +1,9 @@
 // Q#20 solution
-const lang:string[]=["Urdu","English","French","Spanish","Arabic"];
-console.log("List of languages");
-for(let i:number=0;i<lang.length;i++){
-    console.log(`${i+1} . ${lang[i]}`);
-}
+const multi=[["Urdu","English","French"],["Mount Everst", "K-2","Nanga Parbat"]];
+console.log(multi[0][0]);
+console.log(multi[0][1]);
+console.log(multi[0][2]);
+console.log(multi[1][0]);
+console.log(multi[1][1]);
+console.log(multi[1][2]);
+
