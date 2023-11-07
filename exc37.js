@@ -1,12 +1,9 @@
-function Shirt1(size) {
-    if (size == "small") {
-        console.log("Size: ".concat(size, " and message \"I love Pakistan"));
-    }
-    else if (size == "medium") {
-        console.log("Size: ".concat(size, " and message \"I love Typescript"));
-    }
-    else { }
-    console.log("Size: large and message \"I love Typescript");
+function make_shirt(size, message) {
+    if (size === void 0) { size = "large"; }
+    if (message === void 0) { message = "I love TypeScript"; }
+    console.log("Shirt Size: ".concat(size, ", Message: ").concat(message));
 }
-Shirt1("none");
-Shirt1(" ");
+//default message
+make_shirt();
+make_shirt("medium");
+make_shirt("small", "Hello World");
